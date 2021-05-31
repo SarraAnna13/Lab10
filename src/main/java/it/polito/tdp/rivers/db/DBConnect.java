@@ -8,7 +8,6 @@ import javax.sql.DataSource;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-
 public class DBConnect {
 
 	private static String jdbcURL = "jdbc:mysql://localhost/rivers";
@@ -20,7 +19,7 @@ public class DBConnect {
 			HikariConfig config = new HikariConfig();
 			config.setJdbcUrl(jdbcURL);
 			config.setUsername("root");
-			config.setPassword("");
+			config.setPassword("root");
 			
 			// configurazione MySQL
 			config.addDataSourceProperty("cachePrepStmts", "true");
